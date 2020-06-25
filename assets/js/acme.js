@@ -310,7 +310,7 @@ $(document).ready(function() {
 ///////////////////////////////////////////////////////////////////////////
 
 	$('#createStore').click(function(){
-		var storeName=$('#storeName').val();
+		var storeName= $('#storeName').val();
 		var streetName=$('#streetName').val();
 		var streetNumber=$('#streetNumber').val();
 		var country=$('#country option:selected').text();
@@ -325,10 +325,23 @@ $(document).ready(function() {
 		// REVISA AQUÍ:
 		// Modifica el storeJSON con la estructura necesaria para crear una Store correctamente.
 
-		var storeJSON = {}
+		var storeJSON = {
+			"name": storeName,
+			"location":{  
+					"street_number": streetNumber,
+					"street_name": streetName,
+					"city_name": city,
+					"state_name": state,
+					"latitude": latitude,
+					"longitude": longitude,
+					"reference": addressReference,
+					"country": country
+			},
+			"external_id": externalStoreID
+		}
 
 		console.log(storeJSON);
-		$.post("api/store/create/",{json:JSON.stringify(storeJSON)},function(results){
+		$.post("api/store/create/index.php",{json:JSON.stringify(storeJSON)},function(results){
 			console.log("Crea store:");
 			console.log(results);
 			$("#responseStore").text(JSON.stringify(results));
