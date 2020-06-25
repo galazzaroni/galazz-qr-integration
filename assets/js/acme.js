@@ -341,7 +341,7 @@ $(document).ready(function() {
 		}
 
 		console.log(storeJSON);
-		$.post("api/store/create/index.php",{json:JSON.stringify(storeJSON)},function(results){
+		$.post("api/store/create",{json:JSON.stringify(storeJSON)},function(results){
 			console.log("Crea store:");
 			console.log(results);
 			$("#responseStore").text(JSON.stringify(results));
