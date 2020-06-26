@@ -26,7 +26,7 @@ $n=0;
 if(isset($notification['resource'])){$resource = $notification['resource'];$n=$n+1;}else{$resource= "";}
 if(isset($notification['topic'])){$topic =$notification['topic'];$n=$n+1;}else{$topic ="";}
 
-$resource = str_replace('https://enextimpqr.herokuapp.com/api/notifications',$resource);
+$resource = str_replace('https://enextimpqr.herokuapp.com/api/notifications',"",$resource);
 
 if($n==2){
 	// ***********************************************
