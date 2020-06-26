@@ -2,18 +2,17 @@
 
 // REVISA AQUÍ:
 // Agrega el access_token que se indica en el ejercicio así como el collector_id y el country_id
+error_reporting(E_ALL);
+ini_set("display_errors", 1);
 
 $access_token="APP_USR-7026946692817220-061822-8b7c9e20631faac22d9e4cfa92a37265-586728271";
 $collector_id="586728271";
 $country_id="MLA";
 
 // No tocar el integrator_id para el ejercicio
-$integrator_id_test="XXXXXXX"; 
+$integrator_id_test = "XXXXXXX"; 
 
 $notificationJSON="";
-global $access_token,$collector_id,$notificationJSON,$country_id;
-
-
 
 // Función para hacer llamadas a la API
 // Method: get, post, put o delete
@@ -22,7 +21,11 @@ global $access_token,$collector_id,$notificationJSON,$country_id;
 // En el caso que no aplique enviar JSON poner ""
 
     
-function curl_call($method,$url,$json){
+function curl_call($method, $url, $json){
+    global $access_token,$collector_id,$notificationJSON,$country_id;
+
+    $url =  $url."?access_token=$access_token";
+    // die(var_dump($url));
 	$integrator_id_test="";
 	$method = strtoupper($method);
 	$headers = array("Content-Type: application/json","X-integrator-id: $integrator_id_test");
@@ -35,11 +38,12 @@ function curl_call($method,$url,$json){
         CURLOPT_HTTPHEADER => $headers,
         CURLOPT_POSTFIELDS => $json,
     ); 
-
+    
     curl_setopt_array($ch, $options);
     $response = curl_exec($ch);
-   curl_close($ch);
-   return $response;
+    
+    curl_close($ch);
+    return $response;
 
 }
 ?>

@@ -5,7 +5,6 @@
 header('Content-type: application/json');
 
 include_once '../../global/functions.php';
-global $access_token, $collector_id, $integrator_id_test, $country_id;
 
  // REVISA AQUÍ:
  // Qué método y endpoint de la API de Mercado Pago deberías poner aquí para poder   
@@ -13,11 +12,8 @@ global $access_token, $collector_id, $integrator_id_test, $country_id;
  // Sustituye el método por su correspondiente: get, put, post, delete
  // Pista: Revisa detenidamente el endpoint y encuentra el fallo
 
-$url="";
 $json = $_POST["json"];
 
-$response = curl_call("POST","https://api.mercadopago.com/users/$collector_id/store?access_token=$access_token",$json);
-
-echo $response;
+curl_call("post","https://api.mercadopago.com/users/$collector_id/stores",$json);
 
 ?>

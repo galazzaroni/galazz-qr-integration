@@ -41,11 +41,11 @@ IMPORTANTE: Ingresa aquí, sustituyendo este texto, tu DNI/RUT o identificador d
 						<tbody>
 					<tr>
 		      			<th><label for="storeName">Store Name:</label></th>
-		      			<td><input type="text" placeholder="Store name" id="storeName"></td>
+		      			<td><input type="text" placeholder="Store name" id="storeName" value="Sucursal 28089332"></td>
 		      		</tr>
 		      		<tr><th>
-		      		<label for="streetName">Street Name:</label></th><td><input type="text" placeholder="Street name" id="streetName"></td></tr>
-		      		<tr><th><label for="streetNumber">Street Number:</label></th><td><input type="text" placeholder="Street Number" id="streetNumber"></td></tr>
+		      		<label for="streetName">Street Name:</label></th><td><input type="text" placeholder="Street name" id="streetName" value="Sinclair"></td></tr>
+		      		<tr><th><label for="streetNumber">Street Number:</label></th><td><input type="text" placeholder="Street Number" id="streetNumber" value="2929"></td></tr>
 		      		<tr><th><label for="country">Country:</label></th><td><select class="form-control" id="country">
 				    </select></td></tr>
 		      		<tr><th><label for="states">State:</label></th><td><select class="form-control" id="states">
@@ -54,10 +54,10 @@ IMPORTANTE: Ingresa aquí, sustituyendo este texto, tu DNI/RUT o identificador d
 				    <tr><th><label for="cities">City:</label></th><td><select class="form-control" id="cities">
 				      <option>Select city...</option>
 				    </select></td></tr>
-				    <tr><th><label for="latitude">Latitude:</label></th><td><input type="text" placeholder="Latitude" id="latitude"></td></tr>
-				    <tr><th><label for="longitude">Longitude:</label></th><td><input type="text" placeholder="Longitude" id="longitude"></td></tr>
-				    <tr><th><label for="addressReference">Address Reference:</label></th><td><input type="text" placeholder="Address Reference" id="addressReference"></td></tr>
-				    <tr><th><label for="externalStoreID">External Store ID:</label></th><td><input type="text" placeholder="External ID" id="externalStoreID"></td></tr>
+				    <tr><th><label for="latitude">Latitude:</label></th><td><input type="text" placeholder="Latitude" id="latitude" value="-34.5756022"></td></tr>
+				    <tr><th><label for="longitude">Longitude:</label></th><td><input type="text" placeholder="Longitude" id="longitude" value="-58.4249225"></td></tr>
+				    <tr><th><label for="addressReference">Address Reference:</label></th><td><input type="text" placeholder="Address Reference" id="addressReference" value="Piso 1"></td></tr>
+				    <tr><th><label for="externalStoreID">External Store ID:</label></th><td><input type="text" placeholder="External ID" id="externalStoreID" value="suc28089332001"></td></tr>
 						</tbody>
 					</table>
 
@@ -66,7 +66,10 @@ IMPORTANTE: Ingresa aquí, sustituyendo este texto, tu DNI/RUT o identificador d
 					</button> 
 					<br/><br/>
 					Q1) Store creation response:<br/>
-					<textarea id="responseStore"></textarea>
+					<pre style="white-space: pre-wrap;">{"id":"32221112","name":"Sucursal 28089332","date_creation":"2020-06-26T02:27:50.859Z","location":{"address_line":"Sinclair 2929, Palermo, Capital Federal, Argentina","reference":"Piso 1","latitude":-34.5756022,"longitude":-58.4249225},"external_id":"suc28089332001"}</pre>
+					<textarea id="responseStore">
+					
+					</textarea>
 					<br/>
 		      </div>
 		    </div>
@@ -84,15 +87,18 @@ IMPORTANTE: Ingresa aquí, sustituyendo este texto, tu DNI/RUT o identificador d
 		    </div>
 		    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
 		      <div class="card-body">
-		      		<label for="posName">POS Name:</label><input type="text" placeholder="POS Name" id="posName"><br/>
-		      		<label for="externalStoreIDPOS">External Store ID:</label><input type="text" placeholder="External Store ID" id="externalStoreIDPOS"><br/>
-		      		<label for="externalPOSID">External POS ID:</label><input type="text" placeholder="External ID" id="externalPOSID"><br/>
+		      		<label for="posName">POS Name:</label><input type="text" placeholder="POS Name" id="posName" value="POS 28089332"><br/>
+		      		<label for="externalStoreIDPOS">External Store ID:</label><input type="text" placeholder="External Store ID" id="externalStoreIDPOS" value="suc28089332001"><br/>
+		      		<label for="externalPOSID">External POS ID:</label><input type="text" placeholder="External ID" id="externalPOSID" value="pos28089332001"><br/>
 					<br/>
 					<button type="button" class="btn btn-primary" id="createPOS">
 					  Create POS/QR
 					</button> 
 					<br/><br/>
 					Q2) POS creation response:<br/>
+					<pre style="white-space: pre-wrap;">
+					{"id":10172654,"qr":{"image":"https://www.mercadopago.com/instore/merchant/qr/10172654/9d89a0fc275b4a6eaa5a9c6b1d5d55bf97a0d17dd92f403a85c0612dfe800349.png","template_document":"https://www.mercadopago.com/instore/merchant/qr/10172654/template_9d89a0fc275b4a6eaa5a9c6b1d5d55bf97a0d17dd92f403a85c0612dfe800349.pdf","template_image":"https://www.mercadopago.com/instore/merchant/qr/10172654/template_9d89a0fc275b4a6eaa5a9c6b1d5d55bf97a0d17dd92f403a85c0612dfe800349.png"},"status":"active","date_created":"2020-06-25T22:42:22.000-04:00","date_last_updated":"2020-06-25T22:42:22.000-04:00","uuid":"9d89a0fc275b4a6eaa5a9c6b1d5d55bf97a0d17dd92f403a85c0612dfe800349","user_id":586728271,"name":"Sucursal 28089332","fixed_amount":true,"category":621102,"store_id":"32221112","external_store_id":"suc28089332001","external_id":"pos28089332001"}
+					</pre>
 					<textarea id="responsePOS"></textarea>
 					<br/>
 		      </div>
