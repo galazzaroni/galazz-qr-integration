@@ -81,7 +81,7 @@ $(document).ready(function() {
 
 					var orderJSON = {
 									"external_reference": external_reference,
-									"notification_url": "http://enextimpqr.herokuapp.com/api/notifications/",
+									"notification_url": "https://enextimpqr.herokuapp.com/api/notifications/",
 									"items" : items
 									};
 
@@ -362,7 +362,7 @@ $(document).ready(function() {
 
 	$('#createPOS').click(function(){
 
-		var posName=$('#storeName').val();
+		var posName=$('#posName').val();
 		var externalStoreID=$('#externalStoreIDPOS').val();
 		var externalPOSID=$('#externalPOSID').val();
 
