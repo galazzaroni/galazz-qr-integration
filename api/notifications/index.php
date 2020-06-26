@@ -35,7 +35,7 @@ if($n==2){
 
 	// retorna http 200 conforme recibió bien la notificación:
 	header("HTTP/1.1 200 OK");
-
+	$resource = str_replace('https://enextimpqr.herokuapp.com/api/notifications',"",$resource);
 	// Guarda el campo resource de la notificación recibida:
 	// seguramente deberás dar derechos al archivo notifications.txt
 	// Por ejemplo con el comando: "sudo chmod 777 notifications.txt"
@@ -50,7 +50,7 @@ if($n==2){
 }else{
 	
 	// Si llegase otro tipo de notificación igual responderá http 200 pero no hará nada.
-
+	$resource = str_replace('https://enextimpqr.herokuapp.com/api/notifications',"",file_get_contents('php://input'));
 	header("HTTP/1.1 200 OK");
 
 }
