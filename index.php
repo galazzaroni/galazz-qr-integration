@@ -89,7 +89,7 @@ IMPORTANTE: Ingresa aquí, sustituyendo este texto, tu DNI/RUT o identificador d
 		      <div class="card-body">
 		      		<label for="posName">POS Name:</label><input type="text" placeholder="POS Name" id="posName" value="POS 28089332"><br/>
 		      		<label for="externalStoreIDPOS">External Store ID:</label><input type="text" placeholder="External Store ID" id="externalStoreIDPOS" value="suc28089332001"><br/>
-		      		<label for="externalPOSID">External POS ID:</label><input type="text" placeholder="External ID" id="externalPOSID" value="pos28089332001"><br/>
+		      		<label for="externalPOSID">External POS ID:</label><input type="text" placeholder="External ID" id="externalPOSID" value="pos28089332002"><br/>
 					<br/>
 					<button type="button" class="btn btn-primary" id="createPOS">
 					  Create POS/QR
@@ -98,6 +98,7 @@ IMPORTANTE: Ingresa aquí, sustituyendo este texto, tu DNI/RUT o identificador d
 					Q2) POS creation response:<br/>
 					<pre style="white-space: pre-wrap;">
 					{"id":10172654,"qr":{"image":"https://www.mercadopago.com/instore/merchant/qr/10172654/9d89a0fc275b4a6eaa5a9c6b1d5d55bf97a0d17dd92f403a85c0612dfe800349.png","template_document":"https://www.mercadopago.com/instore/merchant/qr/10172654/template_9d89a0fc275b4a6eaa5a9c6b1d5d55bf97a0d17dd92f403a85c0612dfe800349.pdf","template_image":"https://www.mercadopago.com/instore/merchant/qr/10172654/template_9d89a0fc275b4a6eaa5a9c6b1d5d55bf97a0d17dd92f403a85c0612dfe800349.png"},"status":"active","date_created":"2020-06-25T22:42:22.000-04:00","date_last_updated":"2020-06-25T22:42:22.000-04:00","uuid":"9d89a0fc275b4a6eaa5a9c6b1d5d55bf97a0d17dd92f403a85c0612dfe800349","user_id":586728271,"name":"Sucursal 28089332","fixed_amount":true,"category":621102,"store_id":"32221112","external_store_id":"suc28089332001","external_id":"pos28089332001"}
+					{"id":10186215,"qr":{"image":"https://www.mercadopago.com/instore/merchant/qr/10186215/eb0eb81c0024494d8693cf5960409d74d705e15d7e0e4c18acd67a0988a47c9e.png","template_document":"https://www.mercadopago.com/instore/merchant/qr/10186215/template_eb0eb81c0024494d8693cf5960409d74d705e15d7e0e4c18acd67a0988a47c9e.pdf","template_image":"https://www.mercadopago.com/instore/merchant/qr/10186215/template_eb0eb81c0024494d8693cf5960409d74d705e15d7e0e4c18acd67a0988a47c9e.png"},"status":"active","date_created":"2020-06-26T13:10:01.000-04:00","date_last_updated":"2020-06-26T13:10:01.000-04:00","uuid":"eb0eb81c0024494d8693cf5960409d74d705e15d7e0e4c18acd67a0988a47c9e","user_id":586728271,"name":"Sucursal 28089332","fixed_amount":true,"category":621102,"store_id":"32221112","external_store_id":"suc28089332001","external_id":"pos28089332002"}
 					</pre>
 					<textarea id="responsePOS"></textarea>
 					<br/>
@@ -119,7 +120,7 @@ IMPORTANTE: Ingresa aquí, sustituyendo este texto, tu DNI/RUT o identificador d
 		      <div class="card-body">
 
 					<label for="store_id">Store_ID:</label><input type="text" id="store_id" placeholder="Store_ID" value="32221112">
-					<label for="external_id">External_POS_ID:</label><input type="text" id="external_id" placeholder="External_ID" value="pos28089332001">
+					<label for="external_id">External_POS_ID:</label><input type="text" id="external_id" placeholder="External_ID" value="pos28089332002">
 					<label for="external_reference">External_Reference:</label><input type="text" id="external_reference" placeholder="External_Reference" value="ref28089332001">
 					<br/>
 					<div class=""><h3>Order:<h3></div>

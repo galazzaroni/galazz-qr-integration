@@ -15,7 +15,7 @@ $external_id = $_REQUEST["external_id"];
  // Pista... revísalo bien...
  // Sustituye el método por su correspondiente: get, put, post, delete
 
-$url = "https://api.mercadopago.com/mpmobile/instore/qr/$collector_id/$external_id?";
-curl_call("delete","https://api.mercadopago.com/mpmobile/instore/qr/$collector_id/$external_id?");
+$url = "https://api.mercadopago.com/mpmobile/instore/qr/$collector_id/$external_id?t=0";
+curl_call("delete","$url");
 
 ?>

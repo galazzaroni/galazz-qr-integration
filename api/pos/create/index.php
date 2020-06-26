@@ -11,6 +11,6 @@ include_once '../../global/functions.php';
  // crear un POS/QR?
  // Sustituye el método por su correspondiente: get, put, post, delete
 
-curl_call("post","https://api.mercadopago.com/pos", $_POST["json"]);
+curl_call("post","https://api.mercadopago.com/pos?", $_POST["json"]);
 
 ?>

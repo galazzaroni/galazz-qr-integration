@@ -68,7 +68,10 @@ $(document).ready(function() {
 			
 					// Muestra el código QR en pantalla:
 
-					var pos = data.results.filter(pos => { return pos.external_id === $('#externalPOSID').val() })
+					var pos = data.results.filter(pos => { 
+						console.log(pos.external_id);
+						console.log($('#external_id').val());
+						return pos.external_id === $('#external_id').val() })
 
 					$('#qr').html("<img with='350px' height='350px' src='"+ pos[0].qr.image+"'>");
 					
@@ -118,12 +121,12 @@ $(document).ready(function() {
 								
 								if(totalElements>0){ 
 
-									var orderStatus = elements[totalElements-1].status;
+									var orderStatus = elements[0].status;
 									$('#orderStatus').text(orderStatus);
 									$('#loading').html("<img src='assets/img/ajax-loader.gif'>");
 
 									try{
-										if(orderStatus=="opened" && elements[totalElements-1].payments[0].status=="rejected"){
+										if(orderStatus=="opened" && elements[0].payments[0].status=="rejected"){
 											// print 
 											if($('#paymentStatusRejected').text()==""){
 												$('#paymentStatusRejected').text(JSON.stringify(data));
@@ -138,7 +141,7 @@ $(document).ready(function() {
 										cashSound=false;
 										setTimeout(clearInterval(checkStatus),3000);
 
-										$('#orderFinalStatus').text(elements[totalElements-1]);
+										$('#orderFinalStatus').text(elements[0]);
 										$('#exampleModal').modal("hide");
 										$('#paymentStatusSearch').text(JSON.stringify(data));
 
@@ -161,7 +164,7 @@ $(document).ready(function() {
 								}
 
 								try{
-									if(orderStatus=="opened" && elements[totalElements-1].payments[0].status=="rejected"){
+									if(orderStatus=="opened" && elements[0].payments[0].status=="rejected"){
 										// print 
 										if($('#paymentStatusRejected').text()==""){
 											$('#paymentStatusRejected').text(JSON.stringify(data));
@@ -205,9 +208,9 @@ $(document).ready(function() {
 
 		    	// Clear check status interval
 		    	clearInterval(checkStatus);
-
-				$.get("api/order/delete/",{"external_id":external_id},function(){
-					
+			  external_id = '10172654';
+				$.get("api/order/delete/",{"external_id":external_id},function(res){
+						console.log(res);
 				});
 
 		    	$('#exampleModal').modal("hide");
