@@ -16,7 +16,7 @@ IMPORTANTE: Ingresa aquí, sustituyendo este texto, tu DNI/RUT o identificador d
 	</head>
 	<body>
 		<div>
-			<img width="100px" style="display:inline;" src="https://pbs.twimg.com/profile_images/1240629438397722628/qmOFm9ar_400x400.jpg">
+			<img width="100px" style="display:inline;" src="https://gravatar.com/avatar/f836d861f66cb5db88a23b6b5246fafd?s=96&d=https://www.herokucdn.com/images/ninja-avatar-96x96.png">
 			<h1>POINT OF SALE | ACME</h1>
 			<span>Mercado Pago inStore QR Seller. Attended Mode. Exam version 1.0</span>
 		</div>
