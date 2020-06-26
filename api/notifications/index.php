@@ -39,7 +39,8 @@ if($n==2){
 
 	// retorna http 200 conforme recibió bien la notificación:
 	header("HTTP/1.1 200 OK");
-	$resource = str_replace('https://api.mercadolibre.com/merchant_orders/',"",$resource);
+	$resource = isset($_GET['id']) ? $_GET['id'] : str_replace('https://api.mercadolibre.com/merchant_orders/',"",$resource);
+	
 	// Guarda el campo resource de la notificación recibida:
 	// seguramente deberás dar derechos al archivo notifications.txt
 	// Por ejemplo con el comando: "sudo chmod 777 notifications.txt"

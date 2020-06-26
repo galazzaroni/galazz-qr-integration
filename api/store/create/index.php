@@ -14,6 +14,6 @@ include_once '../../global/functions.php';
 
 $json = $_POST["json"];
 
-curl_call("post","https://api.mercadopago.com/users/$collector_id/stores",$json);
+curl_call("post","https://api.mercadopago.com/users/$collector_id/stores?t=0",$json);
 
 ?>

@@ -126,7 +126,8 @@ $(document).ready(function() {
 									$('#loading').html("<img src='assets/img/ajax-loader.gif'>");
 
 									try{
-										if(orderStatus=="opened" && elements[0].payments[0].status=="rejected"){
+										var lastPayment = elements[0].payments.length - 1;
+										if(orderStatus=="opened" && elements[0].payments[lastPayment].status=="rejected"){
 											// print 
 											if($('#paymentStatusRejected').text()==""){
 												$('#paymentStatusRejected').text(JSON.stringify(data));
@@ -186,7 +187,7 @@ $(document).ready(function() {
 
 
 							
-						}, 3000); // finaliza intervalo
+						}, 5000); // finaliza intervalo
 
 					}); // end get pos information
 				
@@ -208,7 +209,6 @@ $(document).ready(function() {
 
 		    	// Clear check status interval
 		    	clearInterval(checkStatus);
-			  external_id = '10172654';
 				$.get("api/order/delete/",{"external_id":external_id},function(res){
 						console.log(res);
 				});
