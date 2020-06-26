@@ -64,24 +64,28 @@ $(document).ready(function() {
 
 				// Si existe external_ID...
 
-				if(data.paging.total>0){
+				if(data){
 			
 					// Muestra el código QR en pantalla:
 
-					$('#qr').html("<img with='350px' height='350px' src='"+data.results[0].qr.image+"'>");
+					$('#qr').html("<img with='350px' height='350px' src='"+data.qr.image+"'>");
 					
 					// REVISA AQUÍ:
 					// Agrega la URL notification_url 
 					// para recibir las notificaciones en tu endpoint público.
 
-					var orderJSON ={"external_reference": external_reference,
+					var orderJSON = {
+									"external_reference": external_reference,
 									"notification_url": "https://enextimpqr.herokuapp.com/api/notifications",
 									"items" : items
 									};
 
 					// Crea orden en base al external_id de la página
 
-					$.post("api/order/create/",{"external_id":external_id,"json":JSON.stringify(orderJSON)},function(data){
+					$.post("api/order/create/",{
+							"external_id": external_id,
+							"json":JSON.stringify(orderJSON)
+						},function(data){
 
 						console.log("Crea orden:");
 						console.log(data);
@@ -398,7 +402,8 @@ var items = [{
 		    "picture_url":"https://globalassets.starbucks.com/assets/f12bc8af498d45ed92c5d6f1dac64062.jpg?impolicy=1by1_wide_1242",
 		    "description" : "Espresso shots topped with hot water create a light layer of crema culminating in this wonderfully rich cup with depth and nuance. Pro Tip: For an additional boost, ask your barista to try this with an extra shot.",
 		    "unit_price" : 90,
-		    "quantity" : 2
+				"quantity" : 2,
+				"currency_id": "ARS"
 		  },
 		  {
 		  	"id":"sku011",
@@ -406,7 +411,8 @@ var items = [{
 		    "picture_url":"https://globalassets.starbucks.com/assets/d668acbc691b47249548a3eeac449916.jpg?impolicy=1by1_wide_1242",
 		    "description" : "A one-to-one combination of fresh-brewed coffee and steamed milk add up to one distinctly delicious coffee drink remarkably mixed.",
 		    "unit_price" : 105,
-		    "quantity" : 1
+		    "quantity" : 1,
+				"currency_id": "ARS"
 		  },
 		  {
 		  	"id":"sku097",
@@ -414,7 +420,8 @@ var items = [{
 		    "picture_url":"https://globalassets.starbucks.com/assets/c636153c255049a487da5db5b9d5f631.jpg?impolicy=1by1_wide_1242",
 		    "description" : "This citrusy, buttery, moist lemon pound cake topped with a sweet icing creates an amazingly refreshing cake like never before.",
 		    "unit_price" : 125,
-		    "quantity" : 3
+		    "quantity" : 3,
+				"currency_id": "ARS"
 		  }];
 
 

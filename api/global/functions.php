@@ -21,10 +21,10 @@ $notificationJSON="";
 // En el caso que no aplique enviar JSON poner ""
 
     
-function curl_call($method, $url, $json){
+function curl_call($method, $url, $json = ""){
     global $access_token,$collector_id,$notificationJSON,$country_id;
 
-    $url =  $url."?access_token=$access_token";
+    $url =  $url."&access_token=$access_token";
     // die(var_dump($url));
 	$integrator_id_test="";
 	$method = strtoupper($method);
