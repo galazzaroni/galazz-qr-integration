@@ -16,7 +16,7 @@ $rootPath = $_SERVER['DOCUMENT_ROOT'];
 
 
 // Recibe notificación:
-$fp = fopen('notifications.txt', 'w');
+$fp = fopen('post.txt', 'w');
 fwrite($fp, file_get_contents('php://input'));
 fclose($fp);
 
