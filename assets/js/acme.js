@@ -64,11 +64,13 @@ $(document).ready(function() {
 
 				// Si existe external_ID...
 
-				if(data){
+				if(data.paging.total>0){
 			
 					// Muestra el código QR en pantalla:
 
-					$('#qr').html("<img with='350px' height='350px' src='"+data.qr.image+"'>");
+					var pos = data.results.filter(pos => { return pos.external_id === $('#externalPOSID').val() })
+
+					$('#qr').html("<img with='350px' height='350px' src='"+ pos[0].qr.image+"'>");
 					
 					// REVISA AQUÍ:
 					// Agrega la URL notification_url 

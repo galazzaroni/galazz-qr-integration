@@ -8,8 +8,8 @@ include_once '../../global/functions.php';
 global $access_token,$collector_id;
 
 $external_reference = $_REQUEST["external_reference"];
-$external_reference = "ref2808933200100";
-$url = "https://api.mercadopago.com//merchant_orders/$external_reference?";
+
+$url = "https://api.mercadopago.com//merchant_orders?external_reference=$external_reference?";
  
  // REVISA AQUÍ:
  // Qué método y endpoint de la API de Mercado Pago deberías poner aquí para poder hacer un get 

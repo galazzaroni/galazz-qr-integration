@@ -25,6 +25,7 @@ function curl_call($method, $url, $json = ""){
     global $access_token,$collector_id,$notificationJSON,$country_id;
 
     $url =  $url."&access_token=$access_token";
+    // var_dump($url);
     // die(var_dump($url));
 	$integrator_id_test="";
 	$method = strtoupper($method);
