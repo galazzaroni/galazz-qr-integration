@@ -16,6 +16,10 @@ $rootPath = $_SERVER['DOCUMENT_ROOT'];
 
 
 // Recibe notificación:
+$fp = fopen('notifications.txt', 'w');
+fwrite($fp, file_get_contents('php://input'));
+fclose($fp);
+
 $received_json = str_replace(",}","}",file_get_contents('php://input'));
 $received_json = str_replace(",\n}","}",$received_json);
 
