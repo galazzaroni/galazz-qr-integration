@@ -27,8 +27,6 @@ if(isset($notification['resource'])){$resource = $notification['resource'];$n=$n
 if(isset($notification['topic'])){$topic =$notification['topic'];$n=$n+1;}else{$topic ="";}
 
 
-
-
 if($n==2){
 	// ***********************************************
 	// GUARDAR LOS LA NOTIFICACIÓN EN ARCHIVO DE TEXTO
@@ -43,6 +41,7 @@ if($n==2){
 	// Por ejemplo con el comando: "sudo chmod 777 notifications.txt"
 
 	$fp = fopen('notifications.txt', 'w');
+	fwrite($fp, file_get_contents('php://input'));
 	fwrite($fp, $resource);
 	fclose($fp);
 

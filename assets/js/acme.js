@@ -78,7 +78,7 @@ $(document).ready(function() {
 
 					var orderJSON = {
 									"external_reference": external_reference,
-									"notification_url": "https://enextimpqr.herokuapp.com/api/notifications",
+									"notification_url": "http://enextimpqr.herokuapp.com/api/notifications/",
 									"items" : items
 									};
 
