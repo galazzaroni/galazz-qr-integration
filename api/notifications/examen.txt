@@ -1,0 +1,95 @@
+Q1:
+{"id":"32221112","name":"Sucursal 28089332","date_creation":"2020-06-26T02:27:50.859Z","location":{"address_line":"Sinclair 2929, Palermo, Capital Federal, Argentina","reference":"Piso 1","latitude":-34.5756022,"longitude":-58.4249225},"external_id":"suc28089332001"}
+
+Q2:
+{"id":10198691,"qr":{"image":"https://www.mercadopago.com/instore/merchant/qr/10198691/7d27de919e3e4cc7bfca64a84595015ac7d6ae65acd34f659fa982b9e4f1fe05.png","template_document":"https://www.mercadopago.com/instore/merchant/qr/10198691/template_7d27de919e3e4cc7bfca64a84595015ac7d6ae65acd34f659fa982b9e4f1fe05.pdf","template_image":"https://www.mercadopago.com/instore/merchant/qr/10198691/template_7d27de919e3e4cc7bfca64a84595015ac7d6ae65acd34f659fa982b9e4f1fe05.png"},"status":"active","date_created":"2020-06-26T19:22:32.000-04:00","date_last_updated":"2020-06-26T19:22:32.000-04:00","uuid":"7d27de919e3e4cc7bfca64a84595015ac7d6ae65acd34f659fa982b9e4f1fe05","user_id":586728271,"name":"POS 28089332","fixed_amount":true,"category":621102,"store_id":"32221112","external_store_id":"suc28089332001","external_id":"pos28089332005"}
+
+Q3:
+{"id":"586728271-1ed382f1-59c2-4d11-b75a-551921196cd4","items":[{"id":"sku021","title":"Caffè Americano","quantity":2,"currency_id":"ARS","unit_price":90,"description":"Espresso shots topped with hot water create a light layer of crema culminating in this wonderfully rich cup with depth and nuance. Pro Tip: For an additional boost, ask your barista to try this with an extra shot.","picture_url":"https://globalassets.starbucks.com/assets/f12bc8af498d45ed92c5d6f1dac64062.jpg?impolicy=1by1_wide_1242","category_id":""},{"id":"sku011","title":"Caffè Misto","quantity":1,"currency_id":"ARS","unit_price":105,"description":"A one-to-one combination of fresh-brewed coffee and steamed milk add up to one distinctly delicious coffee drink remarkably mixed.","picture_url":"https://globalassets.starbucks.com/assets/d668acbc691b47249548a3eeac449916.jpg?impolicy=1by1_wide_1242","category_id":""},{"id":"sku097","title":"Iced Lemon Loaf Cake","quantity":3,"currency_id":"ARS","unit_price":125,"description":"This citrusy, buttery, moist lemon pound cake topped with a sweet icing creates an amazingly refreshing cake like never before.","picture_url":"https://globalassets.starbucks.com/assets/c636153c255049a487da5db5b9d5f631.jpg?impolicy=1by1_wide_1242","category_id":""}],"collector_id":586728271,"collector":{},"total_amount":660,"amount":660,"external_reference":"ref28089332523","operation_type":"regular_payment","payment_methods":{"excluded_payment_methods":[{"id":""}],"excluded_payment_types":[{"id":"atm"},{"id":"ticket"}]},"marketplace":"NONE","marketplace_fee":0,"sponsor_id":0,"notification_url":"https://enextimpqr.herokuapp.com/api/notifications","back_urls":{"success":"","pending":"","failure":""},"payer":{"id":0,"email":"","identification":{"number":"","type":""},"address":{"primary":false,"zip":""},"phone":{"area_code":"","number":""},"internal_tags":[]},"expiration_date_to":"2020-06-27T12:24:26.646-04:00","expires":true,"additional_info":"","site_id":"MLA","client_id":7026946692817220,"processing_modes":["aggregator"],"internal_metadata":{}}
+
+Q4:
+NO HACE FALTA
+
+Q5:
+{
+    "id": 1550619261,
+    "status": "closed",
+    "external_reference": "ref28089332523",
+    "preference_id": "586728271-1ed382f1-59c2-4d11-b75a-551921196cd4",
+    "payments": [
+        {
+            "id": 7244263844,
+            "transaction_amount": 660,
+            "total_paid_amount": 660,
+            "shipping_cost": 0,
+            "currency_id": "ARS",
+            "status": "approved",
+            "status_detail": "accredited",
+            "operation_type": "regular_payment",
+            "date_approved": "2020-06-27T12:16:21.000-04:00",
+            "date_created": "2020-06-27T12:16:20.000-04:00",
+            "last_modified": "2020-06-27T12:16:21.000-04:00",
+            "amount_refunded": 0
+        }
+    ],
+    "shipments": [],
+    "payouts": [],
+    "collector": {
+        "id": 586728271,
+        "email": "test_user_49573161@testuser.com",
+        "nickname": "TETE6262729"
+    },
+    "marketplace": "NONE",
+    "notification_url": "https://enextimpqr.herokuapp.com/api/notifications",
+    "date_created": "2020-06-27T16:15:35.480+00:00",
+    "last_updated": "2020-06-27T16:16:21.675+00:00",
+    "sponsor_id": null,
+    "shipping_cost": 0,
+    "total_amount": 660,
+    "site_id": "MLA",
+    "paid_amount": 660,
+    "refunded_amount": 0,
+    "payer": {
+        "id": 586726338,
+        "email": null
+    },
+    "items": [
+        {
+            "id": "sku021",
+            "category_id": "",
+            "currency_id": "ARS",
+            "description": "Espresso shots topped with hot water create a light layer of crema culminating in this wonderfully rich cup with depth and nuance. Pro Tip: For an additional boost, ask your barista to try this with an extra shot.",
+            "picture_url": "https://globalassets.starbucks.com/assets/f12bc8af498d45ed92c5d6f1dac64062.jpg?impolicy=1by1_wide_1242",
+            "title": "Caffè Americano",
+            "quantity": 2,
+            "unit_price": 90
+        },
+        {
+            "id": "sku011",
+            "category_id": "",
+            "currency_id": "ARS",
+            "description": "A one-to-one combination of fresh-brewed coffee and steamed milk add up to one distinctly delicious coffee drink remarkably mixed.",
+            "picture_url": "https://globalassets.starbucks.com/assets/d668acbc691b47249548a3eeac449916.jpg?impolicy=1by1_wide_1242",
+            "title": "Caffè Misto",
+            "quantity": 1,
+            "unit_price": 105
+        },
+        {
+            "id": "sku097",
+            "category_id": "",
+            "currency_id": "ARS",
+            "description": "This citrusy, buttery, moist lemon pound cake topped with a sweet icing creates an amazingly refreshing cake like never before.",
+            "picture_url": "https://globalassets.starbucks.com/assets/c636153c255049a487da5db5b9d5f631.jpg?impolicy=1by1_wide_1242",
+            "title": "Iced Lemon Loaf Cake",
+            "quantity": 3,
+            "unit_price": 125
+        }
+    ],
+    "cancelled": false,
+    "additional_info": "",
+    "application_id": null,
+    "order_status": "paid"
+}
+
+Q6:
+{"elements":[{"id":1550619261,"status":"closed","external_reference":"ref28089332523","preference_id":"586728271-1ed382f1-59c2-4d11-b75a-551921196cd4","payments":[{"id":7244263844,"transaction_amount":660,"total_paid_amount":660,"shipping_cost":0,"currency_id":"ARS","status":"approved","status_detail":"accredited","operation_type":"regular_payment","date_approved":"2020-06-27T12:16:21.000-04:00","date_created":"2020-06-27T12:16:20.000-04:00","last_modified":"2020-06-27T12:16:21.000-04:00","amount_refunded":0}],"shipments":[],"payouts":[],"collector":{"id":586728271,"email":"test_user_49573161@testuser.com","nickname":"TETE6262729"},"marketplace":"NONE","notification_url":"https://enextimpqr.herokuapp.com/api/notifications","date_created":"2020-06-27T16:15:35.480+00:00","last_updated":"2020-06-27T16:16:21.675+00:00","sponsor_id":null,"shipping_cost":0,"total_amount":660,"site_id":"MLA","paid_amount":660,"refunded_amount":0,"payer":{"id":586726338,"email":null},"items":[{"id":"sku021","category_id":"","currency_id":"ARS","description":"Espresso shots topped with hot water create a light layer of crema culminating in this wonderfully rich cup with depth and nuance. Pro Tip: For an additional boost, ask your barista to try this with an extra shot.","picture_url":"https://globalassets.starbucks.com/assets/f12bc8af498d45ed92c5d6f1dac64062.jpg?impolicy=1by1_wide_1242","title":"Caffè Americano","quantity":2,"unit_price":90},{"id":"sku011","category_id":"","currency_id":"ARS","description":"A one-to-one combination of fresh-brewed coffee and steamed milk add up to one distinctly delicious coffee drink remarkably mixed.","picture_url":"https://globalassets.starbucks.com/assets/d668acbc691b47249548a3eeac449916.jpg?impolicy=1by1_wide_1242","title":"Caffè Misto","quantity":1,"unit_price":105},{"id":"sku097","category_id":"","currency_id":"ARS","description":"This citrusy, buttery, moist lemon pound cake topped with a sweet icing creates an amazingly refreshing cake like never before.","picture_url":"https://globalassets.starbucks.com/assets/c636153c255049a487da5db5b9d5f631.jpg?impolicy=1by1_wide_1242","title":"Iced Lemon Loaf Cake","quantity":3,"unit_price":125}],"cancelled":false,"additional_info":"","application_id":null,"order_status":"paid"}],"next_offset":1,"total":1}

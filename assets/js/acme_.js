@@ -51,7 +51,7 @@ $(document).ready(function() {
 		  	var store_id = $('#store_id').val(); // Obtención de store_id de la página
 		  	var external_id = $('#external_id').val();// obtención de external id del POS de la página
 		  	var external_reference = $('#external_reference').val(); // obtención del external_id de la página
-		  	modal.find(".modal-body").html("<center><div id='qr'></div><span id='posNameSelected'>POSNAME</span><div id='countDown'></div><br/><div id='loading'></div><br/><div id='orderStatus'></div><div id='orderResponse'></div></center>");
+		  	modal.find(".modal-body").html("<center><div id='qr'></div><div id='countDown'></div><br/><div id='loading'></div><br/><div id='orderStatus'></div><div id='orderResponse'></div></center>");
 		    modal.find(".btn-primary").text("Cancel");
 		    
 
@@ -64,22 +64,18 @@ $(document).ready(function() {
 
 				// Si existe external_ID...
 
-				if(data.paging.total > 0){
+				if(data.paging.total>0){
 			
-          // Muestra el código QR en pantalla:
-          var pos = data.results.find(e => e.external_id === $('#external_id').val())
+					// Muestra el código QR en pantalla:
 
-          $('#qr').html("<img with='350px' height='350px' src='"+pos.qr.image+"'>");
-          console.log(pos);
-          $('#posNameSelected').html(pos.name);
+					$('#qr').html("<img with='350px' height='350px' src='"+data.results[0].qr.image+"'>");
 					
 					// REVISA AQUÍ:
 					// Agrega la URL notification_url 
 					// para recibir las notificaciones en tu endpoint público.
 
-					var orderJSON ={
-                  "external_reference": external_reference,
-									"notification_url": "https://enextimpqr.herokuapp.com/api/notifications",
+					var orderJSON ={"external_reference": external_reference,
+									"notification_url": "",
 									"items" : items
 									};
 
@@ -351,20 +347,18 @@ $(document).ready(function() {
 
 		// REVISA AQUÍ:
 
-		var category = "621102";   // Agrega aquí el número de categoría o MCC necesario para 
+		var category = 1;   // Agrega aquí el número de categoría o MCC necesario para 
 							// Identificar al POS de restaurante
 
 
 		// REVISA AQUÍ:
 		// Comprueba que el posJSON sea el adecuado para crear un POS integrado correctamente.
 
-		var posJSON ={
-          "name": posName,
-					"external_store_id": externalStoreID,
-					"fixed_amount": true,
+		var posJSON ={"name":posName,
+					"external_store_id":externalStoreID,
+					"fixed_amount":false,
 					"category_id":category,
-          "external_id":externalPOSID
-        };
+					"external_id":externalPOSID};
 
 
 
@@ -391,8 +385,7 @@ var items = [{
 		    "picture_url":"https://globalassets.starbucks.com/assets/f12bc8af498d45ed92c5d6f1dac64062.jpg?impolicy=1by1_wide_1242",
 		    "description" : "Espresso shots topped with hot water create a light layer of crema culminating in this wonderfully rich cup with depth and nuance. Pro Tip: For an additional boost, ask your barista to try this with an extra shot.",
 		    "unit_price" : 90,
-		    "quantity" : 2,
-        "currency_id" : "ARS"
+		    "quantity" : 2
 		  },
 		  {
 		  	"id":"sku011",
@@ -400,8 +393,7 @@ var items = [{
 		    "picture_url":"https://globalassets.starbucks.com/assets/d668acbc691b47249548a3eeac449916.jpg?impolicy=1by1_wide_1242",
 		    "description" : "A one-to-one combination of fresh-brewed coffee and steamed milk add up to one distinctly delicious coffee drink remarkably mixed.",
 		    "unit_price" : 105,
-		    "quantity" : 1,
-        "currency_id" : "ARS"
+		    "quantity" : 1
 		  },
 		  {
 		  	"id":"sku097",
@@ -409,6 +401,5 @@ var items = [{
 		    "picture_url":"https://globalassets.starbucks.com/assets/c636153c255049a487da5db5b9d5f631.jpg?impolicy=1by1_wide_1242",
 		    "description" : "This citrusy, buttery, moist lemon pound cake topped with a sweet icing creates an amazingly refreshing cake like never before.",
 		    "unit_price" : 125,
-		    "quantity" : 3,
-        "currency_id" : "ARS"
+		    "quantity" : 3
 		  }];
