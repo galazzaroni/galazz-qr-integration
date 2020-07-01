@@ -404,7 +404,7 @@ $(document).ready(function() {
           "name": posName,
 					"external_store_id": externalStoreID,
 					"fixed_amount": true,
-					"category_id":category,
+					"category":category,
           "external_id":externalPOSID
         };
 
