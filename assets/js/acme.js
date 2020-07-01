@@ -51,7 +51,7 @@ $(document).ready(function() {
 		  	var store_id = $('#store_id').val(); // Obtención de store_id de la página
 		  	var external_id = $('#external_id').val();// obtención de external id del POS de la página
 		  	var external_reference = $('#external_reference').val(); // obtención del external_id de la página
-		  	modal.find(".modal-body").html("<center><div id='qr'></div><span id='posNameSelected'>POSNAME</span><div id='countDown'></div><br/><div id='loading'></div><br/><div id='orderStatus'></div><div id='orderResponse'></div></center>");
+		  	modal.find(".modal-body").html("<center><div id='qr'></div><div id='countDown'></div><br/><div id='loading'></div><br/><div id='orderStatus'></div><div id='orderResponse'></div></center>");
 		    modal.find(".btn-primary").text("Cancel");
 		    
 
@@ -69,7 +69,7 @@ $(document).ready(function() {
           // Muestra el código QR en pantalla:
           var pos = data.results.find(e => e.external_id === $('#external_id').val())
 
-          $('#qr').html("<img with='350px' height='350px' src='"+pos.qr.image+"'>");
+          $('#qr').html("<img with='350px' height='350px' src='"+pos[0].qr.image+"'>");
           console.log(pos);
 		  $('#posNameSelected').html(pos.name);
 					
