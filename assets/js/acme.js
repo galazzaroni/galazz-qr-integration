@@ -69,8 +69,9 @@ $(document).ready(function() {
           // Muestra el código QR en pantalla:
           var pos = data.results.find(e => e.external_id === $('#external_id').val())
 
-          $('#qr').html("<img with='350px' height='350px' src='"+pos.qr.image+"'>");
-          console.log(pos);
+		  //$('#qr').html("<img with='350px' height='350px' src='"+pos.qr.image+"'>");
+		  $('#qr').html("<img with='350px' height='350px' src='"+data.results[0].qr.image+"'>");
+          //console.log(pos);
 		  $('#posNameSelected').html(pos.name);
 					
 					// REVISA AQUÍ:
