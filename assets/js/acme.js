@@ -79,7 +79,7 @@ $(document).ready(function() {
 
 					var orderJSON ={
                   "external_reference": external_reference,
-									"notification_url": "",
+									"notification_url": "https://galazz-qr-integration.herokuapp.com/api/notifications",
 									"items" : items
 									};
 
