@@ -41,7 +41,7 @@ IMPORTANTE: Ingresa aquí, sustituyendo este texto, tu DNI/RUT o identificador d
 						<tbody>
 					<tr>
 		      			<th><label for="storeName">Store Name:</label></th>
-		      			<td><input type="text" placeholder="Store name" id="storeName" value="Sucursal 28089332"></td>
+		      			<td><input type="text" placeholder="Store name" id="storeName" value="Sucursal 35794595"></td>
 		      		</tr>
 		      		<tr><th>
 		      		<label for="streetName">Street Name:</label></th><td><input type="text" placeholder="Street name" id="streetName" value="Sinclair"></td></tr>
@@ -57,7 +57,7 @@ IMPORTANTE: Ingresa aquí, sustituyendo este texto, tu DNI/RUT o identificador d
 				    <tr><th><label for="latitude">Latitude:</label></th><td><input type="text" placeholder="Latitude" id="latitude" value="-34.5756022"></td></tr>
 				    <tr><th><label for="longitude">Longitude:</label></th><td><input type="text" placeholder="Longitude" id="longitude" value="-58.4249225"></td></tr>
 				    <tr><th><label for="addressReference">Address Reference:</label></th><td><input type="text" placeholder="Address Reference" id="addressReference" value="Piso 1"></td></tr>
-				    <tr><th><label for="externalStoreID">External Store ID:</label></th><td><input type="text" placeholder="External ID" id="externalStoreID" value="suc28089332001"></td></tr>
+				    <tr><th><label for="externalStoreID">External Store ID:</label></th><td><input type="text" placeholder="External ID" id="externalStoreID" value="suc35794595001"></td></tr>
 						</tbody>
 					</table>
 
@@ -66,7 +66,6 @@ IMPORTANTE: Ingresa aquí, sustituyendo este texto, tu DNI/RUT o identificador d
 					</button> 
 					<br/><br/>
 					Q1) Store creation response:<br/>
-					<pre style="white-space: pre-wrap;">{"id":"32221112","name":"Sucursal 28089332","date_creation":"2020-06-26T02:27:50.859Z","location":{"address_line":"Sinclair 2929, Palermo, Capital Federal, Argentina","reference":"Piso 1","latitude":-34.5756022,"longitude":-58.4249225},"external_id":"suc28089332001"}</pre>
 					<textarea id="responseStore">
 					
 					</textarea>
