@@ -393,7 +393,7 @@ $(document).ready(function() {
 
 		// REVISA AQUÍ:
 
-		var category = "621102";   // Agrega aquí el número de categoría o MCC necesario para 
+		var category = 621102;   // Agrega aquí el número de categoría o MCC necesario para 
 							// Identificar al POS de restaurante
 
 
