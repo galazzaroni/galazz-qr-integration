@@ -57,7 +57,7 @@ IMPORTANTE: Ingresa aquí, sustituyendo este texto, tu DNI/RUT o identificador d
 				    <tr><th><label for="latitude">Latitude:</label></th><td><input type="text" placeholder="Latitude" id="latitude" value="-34.5756022"></td></tr>
 				    <tr><th><label for="longitude">Longitude:</label></th><td><input type="text" placeholder="Longitude" id="longitude" value="-58.4249225"></td></tr>
 				    <tr><th><label for="addressReference">Address Reference:</label></th><td><input type="text" placeholder="Address Reference" id="addressReference" value="Piso 1"></td></tr>
-				    <tr><th><label for="externalStoreID">External Store ID:</label></th><td><input type="text" placeholder="External ID" id="externalStoreID" value="suc35794595001"></td></tr>
+				    <tr><th><label for="externalStoreID">External Store ID:</label></th><td><input type="text" placeholder="External ID" id="externalStoreID"></td></tr>
 						</tbody>
 					</table>
 
@@ -86,9 +86,9 @@ IMPORTANTE: Ingresa aquí, sustituyendo este texto, tu DNI/RUT o identificador d
 		    </div>
 		    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
 		      <div class="card-body">
-		      		<label for="posName">POS Name:</label><input type="text" placeholder="POS Name" id="posName" value="POS 35794595"><br/>
-		      		<label for="externalStoreIDPOS">External Store ID:</label><input type="text" placeholder="External Store ID" id="externalStoreIDPOS" value="suc35794595006"><br/>
-		      		<label for="externalPOSID">External POS ID:</label><input type="text" placeholder="External ID" id="externalPOSID" value="pos35794595009"><br/>
+		      		<label for="posName">POS Name:</label><input type="text" placeholder="POS Name" id="posName"><br/>
+		      		<label for="externalStoreIDPOS">External Store ID:</label><input type="text" placeholder="External Store ID" id="externalStoreIDPOS"><br/>
+		      		<label for="externalPOSID">External POS ID:</label><input type="text" placeholder="External ID" id="externalPOSID"><br/>
 					<br/>
 					<button type="button" class="btn btn-primary" id="createPOS">
 					  Create POS/QR
@@ -114,9 +114,9 @@ IMPORTANTE: Ingresa aquí, sustituyendo este texto, tu DNI/RUT o identificador d
 		    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
 		      <div class="card-body">
 
-					<label for="store_id">Store_ID:</label><input type="text" id="store_id" placeholder="Store_ID" value="32279073">
-					<label for="external_id">External_POS_ID:</label><input type="text" id="external_id" placeholder="External_ID" value="suc35794595006">
-					<label for="external_reference">External_Reference:</label><input type="text" id="external_reference" placeholder="External_Reference" value="ref35794595001">
+					<label for="store_id">Store_ID:</label><input type="text" id="store_id" placeholder="Store_ID">
+					<label for="external_id">External_POS_ID:</label><input type="text" id="external_id" placeholder="External_ID">
+					<label for="external_reference">External_Reference:</label><input type="text" id="external_reference" placeholder="External_Reference">
 					<br/>
 					<div class=""><h3>Order:<h3></div>
 					<br/>	
