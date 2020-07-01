@@ -87,7 +87,7 @@ IMPORTANTE: Ingresa aquí, sustituyendo este texto, tu DNI/RUT o identificador d
 		    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
 		      <div class="card-body">
 		      		<label for="posName">POS Name:</label><input type="text" placeholder="POS Name" id="posName" value="POS 35794595"><br/>
-		      		<label for="externalStoreIDPOS">External Store ID:</label><input type="text" placeholder="External Store ID" id="externalStoreIDPOS" value="suc35794595009"><br/>
+		      		<label for="externalStoreIDPOS">External Store ID:</label><input type="text" placeholder="External Store ID" id="externalStoreIDPOS" value="suc35794595006"><br/>
 		      		<label for="externalPOSID">External POS ID:</label><input type="text" placeholder="External ID" id="externalPOSID" value="pos35794595009"><br/>
 					<br/>
 					<button type="button" class="btn btn-primary" id="createPOS">
