@@ -114,9 +114,9 @@ IMPORTANTE: Ingresa aquí, sustituyendo este texto, tu DNI/RUT o identificador d
 		    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
 		      <div class="card-body">
 
-					<label for="store_id">Store_ID:</label><input type="text" id="store_id" placeholder="Store_ID" value="32221112">
-					<label for="external_id">External_POS_ID:</label><input type="text" id="external_id" placeholder="External_ID" value="pos28089332001">
-					<label for="external_reference">External_Reference:</label><input type="text" id="external_reference" placeholder="External_Reference" value="ref28089332001">
+					<label for="store_id">Store_ID:</label><input type="text" id="store_id" placeholder="Store_ID" value="32279073">
+					<label for="external_id">External_POS_ID:</label><input type="text" id="external_id" placeholder="External_ID" value="suc35794595006">
+					<label for="external_reference">External_Reference:</label><input type="text" id="external_reference" placeholder="External_Reference" value="ref35794595001">
 					<br/>
 					<div class=""><h3>Order:<h3></div>
 					<br/>	
