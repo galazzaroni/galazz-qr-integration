@@ -72,7 +72,7 @@ $(document).ready(function() {
 		  //$('#qr').html("<img with='350px' height='350px' src='"+pos.qr.image+"'>");
 		  $('#qr').html("<img with='350px' height='350px' src='"+data.results[0].qr.image+"'>");
           //console.log(pos);
-		  $('#posNameSelected').html(pos.name);
+		  //$('#posNameSelected').html(pos.name);
 					
 					// REVISA AQUÍ:
 					// Agrega la URL notification_url 
